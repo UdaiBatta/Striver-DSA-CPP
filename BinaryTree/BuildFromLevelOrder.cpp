@@ -14,7 +14,7 @@ public:
     }
 };
 
-// Function to build a binary tree from user input
+        // Function to build a binary tree from user input
 Node* BinaryTree() {
     cout << "Enter the data of the node (enter -1 for NULL): ";
     int data;

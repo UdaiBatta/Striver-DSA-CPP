@@ -66,7 +66,6 @@ void ReverseLevelOrderTraversal(Node* root) {
         cout << s.top() << " ";
         s.pop();
     }
-
 }
 
 void PreOrder(Node* root){
