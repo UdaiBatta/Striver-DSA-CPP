@@ -16,23 +16,28 @@ class Node{
 void insertIntoBst(Node* &root , int d){
     if(root == nullptr){
         root = new Node(d);
-        return root;
+        return;
+    }
+    if(d < root->data) {
+        insertIntoBst(root->left, d);
+    } else {
+        insertIntoBst(root->right, d);
     }
 }
 
 void takeInput(Node* &root){
     int data;
-    cin>>data;
+    cin >> data;
 
     while(data != -1){
         insertIntoBst(root , data);
-        cin>>data;
+        cin >> data;
     }
 }
 
 int main(){
-    Node* root = NULL:
+    Node* root = NULL;
 
-    cout<<"Enter the data to create BST"<<endl;
+    cout << "Enter the data to create BST" << endl;
     takeInput(root);
 }
